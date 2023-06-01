@@ -493,6 +493,16 @@ export interface CurlInfo {
    * Official libcurl documentation: : [https://curl.haxx.se/libcurl/c/CURLINFO_TOTAL_TIME_T.html](https://curl.haxx.se/libcurl/c/CURLINFO_TOTAL_TIME_T.html)
    */
   readonly TOTAL_TIME_T: 'TOTAL_TIME_T'
+
+  /**
+   * curl-impersonate:SSL_COMPRESSION
+   */
+  readonly SSL_COMPRESSION: 'SSL_COMPRESSION'
+
+  /**
+   * curl-impersonate:SSL_ENABLE_ALPS
+   */
+  readonly SSL_ENABLE_ALPS: 'SSL_ENABLE_ALPS'
 }
 
 /**
@@ -568,3 +578,5 @@ export type CurlInfoName =
   | 'TLS_SSL_PTR'
   | 'TOTAL_TIME'
   | 'TOTAL_TIME_T'
+  | 'SSL_COMPRESSION'
+  | 'SSL_ENABLE_ALPS'

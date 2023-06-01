@@ -6,10 +6,10 @@
   # 
   'variables': {
     # Comma separated list
-    'curl_include_dirs%': '',
+    'curl_include_dirs%': '/Users/yubanzhan/curl_test/curl-impersonate/build/curl-7.84.0/include',
     'curl_libraries%': '',
-    'curl_static_build%': 'false',
-    'curl_config_bin%': 'node <(module_root_dir)/scripts/curl-config.js',
+    'curl_static_build%': 'true',
+    'curl_config_bin%': '/usr/local/bin/curl-impersonate-chrome-config',
     'node_libcurl_no_setlocale%': 'false',
     'node_libcurl_cpp_std%': '<!(node <(module_root_dir)/scripts/cpp-std.js)',
     'macos_universal_build%': 'false',
@@ -221,7 +221,7 @@
             ],
             'GCC_ENABLE_CPP_RTTI': 'YES',
             'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
-            'MACOSX_DEPLOYMENT_TARGET':'11.6',
+            'MACOSX_DEPLOYMENT_TARGET':'10.12',
             'CLANG_CXX_LIBRARY': 'libc++',
             'CLANG_CXX_LANGUAGE_STANDARD':'<(node_libcurl_cpp_std)',
             'OTHER_LDFLAGS': ['-stdlib=libc++'],

@@ -90,6 +90,21 @@ export interface MultiOption {
    * Official libcurl documentation: : [https://curl.haxx.se/libcurl/c/CURLMOPT_TIMERFUNCTION.html](https://curl.haxx.se/libcurl/c/CURLMOPT_TIMERFUNCTION.html)
    */
   readonly TIMERFUNCTION: 'TIMERFUNCTION'
+
+  /**
+   * curl-impersonate:SSL_COMPRESSION
+   */
+  readonly SSL_COMPRESSION: 'SSL_COMPRESSION'
+
+  /**
+   * curl-impersonate:SSL_ENABLE_ALPS
+   */
+  readonly SSL_ENABLE_ALPS: 'SSL_ENABLE_ALPS'
+
+  /**
+   * curl-impersonate:HTTP2_NO_SERVER_PUSH
+   */
+  readonly HTTP2_NO_SERVER_PUSH: 'HTTP2_NO_SERVER_PUSH'
 }
 
 /**
@@ -112,3 +127,6 @@ export type MultiOptionName =
   | 'SOCKETFUNCTION'
   | 'TIMERDATA'
   | 'TIMERFUNCTION'
+  | 'SSL_COMPRESSION'
+  | 'SSL_ENABLE_ALPS'
+  | 'HTTP2_NO_SERVER_PUSH'

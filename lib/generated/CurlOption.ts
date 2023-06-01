@@ -1841,6 +1841,21 @@ export interface CurlOption {
    * Official libcurl documentation: : [https://curl.haxx.se/libcurl/c/CURLOPT_XOAUTH2_BEARER.html](https://curl.haxx.se/libcurl/c/CURLOPT_XOAUTH2_BEARER.html)
    */
   readonly XOAUTH2_BEARER: 'XOAUTH2_BEARER'
+
+  /**
+   * curl-impersonate:SSL_COMPRESSION
+   */
+  readonly SSL_COMPRESSION: 'SSL_COMPRESSION'
+
+  /**
+   * curl-impersonate:SSL_ENABLE_ALPS
+   */
+  readonly SSL_ENABLE_ALPS: 'SSL_ENABLE_ALPS'
+
+  /**
+   * curl-impersonate:HTTP2_NO_SERVER_PUSH
+   */
+  readonly HTTP2_NO_SERVER_PUSH: 'HTTP2_NO_SERVER_PUSH'
 }
 
 export const CurlOptionCamelCaseMap = {
@@ -3646,6 +3661,21 @@ export const CurlOptionCamelCaseMap = {
    * Official libcurl documentation: : [https://curl.haxx.se/libcurl/c/CURLOPT_XOAUTH2_BEARER.html](https://curl.haxx.se/libcurl/c/CURLOPT_XOAUTH2_BEARER.html)
    */
   xoauth2Bearer: 'XOAUTH2_BEARER',
+
+  /**
+   * curl-impersonate:SSL_COMPRESSION
+   */
+  sslCompression: 'SSL_COMPRESSION',
+
+  /**
+   * curl-impersonate:SSL_ENABLE_ALPS
+   */
+  sslEnableAlps: 'SSL_ENABLE_ALPS',
+
+  /**
+   * curl-impersonate:HTTP2_NO_SERVER_PUSH
+   */
+  http2NoServerPush: 'HTTP2_NO_SERVER_PUSH',
 } as const
 
 /**
@@ -3909,6 +3939,9 @@ export type CurlOptionName =
   | 'WRITEFUNCTION'
   | 'XFERINFOFUNCTION'
   | 'XOAUTH2_BEARER'
+  | 'SSL_COMPRESSION'
+  | 'SSL_ENABLE_ALPS'
+  | 'HTTP2_NO_SERVER_PUSH'
 import { FileInfo, HttpPostField } from '../types'
 export type DataCallbackOptions =
   | 'READFUNCTION'
@@ -7721,4 +7754,34 @@ export type CurlOptionValueType = {
    * Official libcurl documentation: : [https://curl.haxx.se/libcurl/c/CURLOPT_XOAUTH2_BEARER.html](https://curl.haxx.se/libcurl/c/CURLOPT_XOAUTH2_BEARER.html)
    */
   xoauth2Bearer?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:SSL_COMPRESSION
+   */
+  SSL_COMPRESSION?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:sslCompression
+   */
+  sslCompression?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:SSL_ENABLE_ALPS
+   */
+  SSL_ENABLE_ALPS?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:sslEnableAlps
+   */
+  sslEnableAlps?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:HTTP2_NO_SERVER_PUSH
+   */
+  HTTP2_NO_SERVER_PUSH?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:http2NoServerPush
+   */
+  http2NoServerPush?: string | number | boolean | null
 }

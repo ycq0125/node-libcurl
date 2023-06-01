@@ -300,6 +300,14 @@ const std::vector<CurlConstant> curlOptionInteger = {
 #if NODE_LIBCURL_VER_GE(7, 59, 0)
     {"TIMEVALUE_LARGE", CURLOPT_TIMEVALUE_LARGE},
 #endif
+
+#if NODE_LIBCURL_VER_GE(7, 84, 0)
+    /* curl-impersonate */
+    {"SSL_ENABLE_ALPS", CURLOPT_SSL_ENABLE_ALPS},
+    {"SSL_FALSESTART", CURLOPT_SSL_FALSESTART},
+    {"HTTP2_NO_SERVER_PUSH", CURLOPT_HTTP2_NO_SERVER_PUSH},
+// {"SSL_PERMUTE_EXTENSIONS", CURLOPT_SSL_PERMUTE_EXTENSIONS}
+#endif
 };
 
 const std::vector<CurlConstant> curlOptionString = {
@@ -472,6 +480,11 @@ const std::vector<CurlConstant> curlOptionString = {
 
 #if NODE_LIBCURL_VER_GE(7, 33, 0)
     {"XOAUTH2_BEARER", CURLOPT_XOAUTH2_BEARER},
+#endif
+
+#if NODE_LIBCURL_VER_GE(7, 84, 0)
+    /* curl-impersonate */
+    {"SSL_COMPRESSION", CURLOPT_SSL_CERT_COMPRESSION},
 #endif
 };
 
