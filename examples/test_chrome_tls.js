@@ -1,5 +1,6 @@
 // thanks for https://github.com/lwthiker/curl-impersonate
 const { Curl, CurlHttpVersion, CurlSslVersion } = require('../dist')
+// const { Curl, CurlHttpVersion, CurlSslVersion } = require('@ycq0125/node-libcurl')
 console.log(Curl.getVersionInfoString())
 
 async function main() {

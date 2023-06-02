@@ -1,8 +1,9 @@
 {
-  "name": "node-libcurl",
-  "version": "3.0.0",
-  "description": "The fastest http(s) client (and much more) for Node.js - Node.js bindings for libcurl",
+  "name": "@ycq0125/node-libcurl",
+  "version": "1.0.0",
+  "description": "The fastest http(s) client (and much more) for Node.js - Node.js bindings for libcurl(curl-impersonate)",
   "keywords": [
+    "curl-impersonate",
     "node-curl",
     "curl",
     "libcurl",
@@ -10,13 +11,13 @@
     "axios",
     "request"
   ],
-  "homepage": "https://github.com/JCMais/node-libcurl",
+  "homepage": "https://github.com/ycq0125/node-libcurl",
   "bugs": {
-    "url": "https://github.com/JCMais/node-libcurl/issues"
+    "url": "https://github.com/ycq0125/node-libcurl/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/JCMais/node-libcurl.git"
+    "url": "git://github.com/ycq0125/node-libcurl.git"
   },
   "license": "MIT",
   "author": "Jonathan Cardoso <me@jonathancardoso.com>",
