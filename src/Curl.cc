@@ -306,6 +306,7 @@ const std::vector<CurlConstant> curlOptionInteger = {
     {"SSL_ENABLE_ALPS", CURLOPT_SSL_ENABLE_ALPS},
     {"SSL_FALSESTART", CURLOPT_SSL_FALSESTART},
     {"HTTP2_NO_SERVER_PUSH", CURLOPT_HTTP2_NO_SERVER_PUSH},
+    {"SSL_ENABLE_TICKET", CURLOPT_SSL_ENABLE_TICKET},
 // {"SSL_PERMUTE_EXTENSIONS", CURLOPT_SSL_PERMUTE_EXTENSIONS}
 #endif
 };
@@ -485,6 +486,8 @@ const std::vector<CurlConstant> curlOptionString = {
 #if NODE_LIBCURL_VER_GE(7, 84, 0)
     /* curl-impersonate */
     {"SSL_COMPRESSION", CURLOPT_SSL_CERT_COMPRESSION},
+    {"HTTP2_PSEUDO_HEADERS_ORDER", CURLOPT_HTTP2_PSEUDO_HEADERS_ORDER},
+    {"SSL_SIG_HASH_ALGS", CURLOPT_SSL_SIG_HASH_ALGS}
 #endif
 };
 
@@ -539,6 +542,10 @@ const std::vector<CurlConstant> curlOptionLinkedList = {
     {"RESOLVE", CURLOPT_RESOLVE},
     {"RTSPHEADER", CURLOPT_RTSPHEADER},
     {"TELNETOPTIONS", CURLOPT_TELNETOPTIONS},
+#if NODE_LIBCURL_VER_GE(7, 84, 0)
+    /* curl-impersonate */
+    {"HTTPBASEHEADER", CURLOPT_HTTPBASEHEADER},
+#endif
 };
 
 const std::vector<CurlConstant> curlOptionHttpPost = {

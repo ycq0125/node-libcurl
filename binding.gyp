@@ -6,7 +6,7 @@
   # 
   'variables': {
     # Comma separated list
-    'curl_include_dirs%': '/Users/yubanzhan/curl_test/curl-impersonate/build/curl-7.84.0/include',
+    'curl_include_dirs%': 'deps/include',
     'curl_libraries%': '',
     'curl_static_build%': 'true',
     'curl_config_bin%': '/usr/local/bin/curl-impersonate-chrome-config',

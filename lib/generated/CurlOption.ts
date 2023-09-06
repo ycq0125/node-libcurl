@@ -1856,6 +1856,26 @@ export interface CurlOption {
    * curl-impersonate:HTTP2_NO_SERVER_PUSH
    */
   readonly HTTP2_NO_SERVER_PUSH: 'HTTP2_NO_SERVER_PUSH'
+
+  /**
+   * curl-impersonate:SSL_ENABLE_TICKET
+   */
+  readonly SSL_ENABLE_TICKET: 'SSL_ENABLE_TICKET'
+
+  /**
+   * curl-impersonate:HTTP2_PSEUDO_HEADERS_ORDER
+   */
+  readonly HTTP2_PSEUDO_HEADERS_ORDER: 'HTTP2_PSEUDO_HEADERS_ORDER'
+
+  /**
+   * curl-impersonate:SSL_SIG_HASH_ALGS
+   */
+  readonly SSL_SIG_HASH_ALGS: 'SSL_SIG_HASH_ALGS'
+
+  /**
+   * curl-impersonate:HTTPBASEHEADER
+   */
+  readonly HTTPBASEHEADER: 'HTTPBASEHEADER'
 }
 
 export const CurlOptionCamelCaseMap = {
@@ -3676,6 +3696,26 @@ export const CurlOptionCamelCaseMap = {
    * curl-impersonate:HTTP2_NO_SERVER_PUSH
    */
   http2NoServerPush: 'HTTP2_NO_SERVER_PUSH',
+
+  /**
+   * curl-impersonate:SSL_ENABLE_TICKET
+   */
+  sslEnableTicket: 'SSL_ENABLE_TICKET',
+
+  /**
+   * curl-impersonate:HTTP2_PSEUDO_HEADERS_ORDER
+   */
+  http2PseudoHeadersOrder: 'HTTP2_PSEUDO_HEADERS_ORDER',
+
+  /**
+   * curl-impersonate:SSL_SIG_HASH_ALGS
+   */
+  sslSigHashALGS: 'SSL_SIG_HASH_ALGS',
+
+  /**
+   * curl-impersonate:HTTPBASEHEADER
+   */
+  httpBaseHeader: 'HTTPBASEHEADER',
 } as const
 
 /**
@@ -3942,6 +3982,10 @@ export type CurlOptionName =
   | 'SSL_COMPRESSION'
   | 'SSL_ENABLE_ALPS'
   | 'HTTP2_NO_SERVER_PUSH'
+  | 'SSL_ENABLE_TICKET'
+  | 'HTTP2_PSEUDO_HEADERS_ORDER'
+  | 'SSL_SIG_HASH_ALGS'
+  | 'HTTPBASEHEADER'
 import { FileInfo, HttpPostField } from '../types'
 export type DataCallbackOptions =
   | 'READFUNCTION'
@@ -7784,4 +7828,43 @@ export type CurlOptionValueType = {
    * curl-impersonate:http2NoServerPush
    */
   http2NoServerPush?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:SSL_ENABLE_TICKET
+   */
+  SSL_ENABLE_TICKET?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:sslEnableTicket
+   */
+  sslEnableTicket?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:HTTP2_PSEUDO_HEADERS_ORDER
+   */
+  HTTP2_PSEUDO_HEADERS_ORDER?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:http2PseudoHeadersOrder
+   */
+  http2PseudoHeadersOrder?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:SSL_SIG_HASH_ALGS
+   */
+  SSL_SIG_HASH_ALGS?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:sslSigHashALGS
+   */
+  sslSigHashALGS?: string | number | boolean | null
+  /**
+   * curl-impersonate:HTTPBASEHEADER
+   */
+  HTTPBASEHEADER?: string | number | boolean | null
+
+  /**
+   * curl-impersonate:httpBaseHeader
+   */
+  httpBaseHeader?: string | number | boolean | null
 }
